@@ -17,8 +17,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 rzip is a file compression program designed to do particularly well
 on very large files containing long distance redundency.
 
+%description -l pl
+rzip to program do kompresji plików zaprojektowany tak, aby dobrze
+dzia³a³ w szczególno¶ci dla du¿ych plików zawieraj±cych redundancjê w
+du¿ej odleg³o¶ci.
+
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 %patch0 -p1
 
 %build
@@ -34,8 +39,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%postun
 
 %files
 %defattr(644,root,root,755)
