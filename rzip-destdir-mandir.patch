@@ -1,0 +1,27 @@
+diff -urN rzip-2.0.org/Makefile.in rzip-2.0/Makefile.in
+--- rzip-2.0.org/Makefile.in	2003-10-06 13:53:00.000000000 +0200
++++ rzip-2.0/Makefile.in	2004-04-11 23:28:48.050958536 +0200
+@@ -4,7 +4,7 @@
+ prefix=@prefix@
+ exec_prefix=@exec_prefix@
+ INSTALL_BIN=$(exec_prefix)/bin
+-INSTALL_MAN=$(prefix)/man
++INSTALL_MAN=@mandir@
+ 
+ LIBS=@LIBS@
+ CC=@CC@
+@@ -31,10 +31,10 @@
+ man: rzip.1 
+ 
+ install: all
+-	-mkdir -p ${INSTALL_BIN}
+-	${INSTALLCMD} -m 755 rzip ${INSTALL_BIN}
+-	-mkdir -p ${INSTALL_MAN}/man1
+-	${INSTALLCMD} -m 644 $(srcdir)/rzip.1 ${INSTALL_MAN}/man1/
++	-mkdir -p $(DESTDIR)${INSTALL_BIN}
++	${INSTALLCMD} -m 755 rzip $(DESTDIR)${INSTALL_BIN}
++	-mkdir -p $(DESTDIR)${INSTALL_MAN}/man1
++	${INSTALLCMD} -m 644 $(srcdir)/rzip.1 $(DESTDIR)${INSTALL_MAN}/man1/
+ 
+ rzip: $(OBJS)
+ 	$(CC) $(CFLAGS) -o rzip $(OBJS) $(LIBS)
