@@ -1,12 +1,12 @@
 Summary:	A large-file compression program
 Summary(pl):	Program do kompresowania du¿ych plików
 Name:		rzip
-Version:	2.0
+Version:	2.1
 Release:	0.1
 License:	GPL
 Group:		Applications/Archiving
 Source0:	http://rzip.samba.org/ftp/rzip/%{name}-%{version}.tar.gz
-# Source0-md5:	8a88b445afba919b122a3899d6d26b2a
+# Source0-md5:	0a3ba55085661647c12f2b014c51c406
 Patch0:		%{name}-destdir-mandir.patch
 URL:		http://rzip.samba.org/
 BuildRequires:	autoconf
