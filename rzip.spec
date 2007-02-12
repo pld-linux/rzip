@@ -1,5 +1,5 @@
 Summary:	A large-file compression program
-Summary(pl):	Program do kompresowania duøych plikÛw
+Summary(pl.UTF-8):   Program do kompresowania du≈ºych plik√≥w
 Name:		rzip
 Version:	2.1
 Release:	0.1
@@ -17,10 +17,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 rzip is a file compression program designed to do particularly well
 on very large files containing long distance redundency.
 
-%description -l pl
-rzip to program do kompresji plikÛw zaprojektowany tak, aby dobrze
-dzia≥a≥ w szczegÛlno∂ci dla duøych plikÛw zawieraj±cych redundancjÍ w
-duøej odleg≥o∂ci.
+%description -l pl.UTF-8
+rzip to program do kompresji plik√≥w zaprojektowany tak, aby dobrze
+dzia≈Ça≈Ç w szczeg√≥lno≈õci dla du≈ºych plik√≥w zawierajƒÖcych redundancjƒô w
+du≈ºej odleg≈Ço≈õci.
 
 %prep
 %setup -q
