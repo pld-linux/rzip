@@ -1,5 +1,5 @@
 Summary:	A large-file compression program
-Summary(pl.UTF-8):   Program do kompresowania dużych plików
+Summary(pl.UTF-8):	Program do kompresowania dużych plików
 Name:		rzip
 Version:	2.1
 Release:	0.1
